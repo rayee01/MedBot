@@ -24,28 +24,21 @@ let pat_name="";
   else if(a==4){
     if(input=="1"){
       doct_spec="ENT";
-      output="Available doctor 1)Mr abc";
+      output="Available doctor 1)Mr Shubham";
+      doct_name="Mr Shubham";
     }
     if(input=="2"){
       doct_spec="Dental";
-      output="Available doctor 1)Mr xyz";
+      output="Available doctor 1)Ms Vartika";
+      doct_name="Ms vartika";
     }
     if(input=="3"){
       doct_spec="Eye";
-      output="Available doctor 1)Mr pop";
+      output="Available doctor 1)Ms Mansi";
+      doct_name="Ms Mansi";
     } 
   }
   else if(a==5){
-    if(input=="1"){
-      doct_name="Mr abc";
-      
-    }
-    if(input=="2"){
-      doct_name="Mr xyz";
-    }
-    if(input=="3"){
-      doct_name="Mr Pop";
-    } 
     output="Enter prefered time for "+doct_name;
   }
   else if(a==6){
@@ -136,7 +129,7 @@ function printapplication(name,age,weight,spec,doct,time){
   displayBotMessage("your appointment slip");
   const formHtml = `
     <form id="application-form">
-      <h1>Xyz Hospital</h1>
+      <h1>GFG Hospital</h1>
       <h2>Geeks for Geeks, Sector-136, Noida</h2>
       <label for="name">Name:</label>
       <input type="text" id="name" value="${name}" readonly><br><br>
